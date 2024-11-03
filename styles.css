@@ -1,11 +1,85 @@
-.flex-container {
-    display: flex;
-  }
-  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
 
-  .flex-container div {
-    background: peachpuff;
-    border: 4px solid brown;
-    height: 100px;
-    flex: 1;
-  }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #1F2937;
+    color: white;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 30px 10%
+}
+
+header > p, li, a {
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+header > p {
+    font-weight: bolder; 
+} 
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links > li {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.nav_links > li:hover{
+    font-weight: normal;
+}
+
+footer {
+    font-size: 10px;
+    font-weight: Lighter;
+    justify-content: center;
+}
+
+.container {
+    flex: 1; /* Takes up remaining space between header and footer */
+    display: flex;
+    flex-direction: column; /* Stacks sections vertically */
+}
+
+/* Content sections styling */
+.content {
+    flex: 1; /* Allows each section to take up equal space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: red;
+}
+
+/* Optional: Add distinct colors for each content section */
+#one { background-color: #1F2937; 
+}
+
+#two { background-color: white; 
+}
+
+#three { background-color: #E5E7EB; 
+}
+
+#four { background-color: white; 
+}
