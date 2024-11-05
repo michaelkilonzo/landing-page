@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -14,72 +14,110 @@ body {
 header, footer {
     background-color: #1F2937;
     color: white;
-    height: 7vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10%;
 }
 
-header {
-    padding: 30px 10%
-}
 
-header > p, li, a {
+
+header p, li, a {
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
 }
 
-header > p {
-    font-weight: bolder; 
+header p {
+    font-weight: 700; 
 } 
 
 .nav_links {
     list-style: none;
 }
 
-.nav_links > li {
+.nav_links li {
     display: inline-block;
     padding: 0 20px;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 14px;
 }
 
-.nav_links > li:hover{
+.nav_links li:hover{
     font-weight: normal;
 }
 
 footer {
-    font-size: 10px;
-    font-weight: Lighter;
+    font-size: 12px;
+    font-weight: 300;
     justify-content: center;
 }
 
 .container {
-    flex: 1; /* Takes up remaining space between header and footer */
+    flex: 1;
     display: flex;
     flex-direction: column; /* Stacks sections vertically */
 }
 
+
 /* Content sections styling */
 .content {
-    flex: 1; /* Allows each section to take up equal space */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    color: red;
+    color: white;
+    max-height: 22vh;
+    flex: 1;
+    
 }
 
-/* Optional: Add distinct colors for each content section */
-#one { background-color: #1F2937; 
+
+.content > * {
+    max-height: 90%;
+    overflow: clip;
 }
 
-#two { background-color: white; 
+
+#one { 
+    display: flex;
+    flex: 1;
+    background-color: #1F2937; 
+    padding: 0 10vw;
+    gap: 3vw;
+}
+
+#one .content-left, .content-right {
+    border: 2px dotted rgb(96 139 168);
+    flex: 1;
+
+    
+}
+
+
+#one h1 {
+    font-size: 48px;
+    color: #F9FAF9;
+    font-weight: 900;
+}
+
+#one p {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 300;
+    max-height: 90%;
+}
+
+
+#two { background-color: white;
+    flex: 1;
 }
 
 #three { background-color: #E5E7EB; 
+    flex: 1;
 }
 
 #four { background-color: white; 
+    flex: 1;
 }
