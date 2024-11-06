@@ -75,8 +75,7 @@ footer {
 
 
 .content > * {
-    max-height: 90%;
-    overflow: clip;
+    overflow: scroll;
 }
 
 
@@ -89,25 +88,55 @@ footer {
 }
 
 #one .content-left, .content-right {
-    border: 2px dotted rgb(96 139 168);
     flex: 1;
+    display: 1;
+    flex-direction: column;
 
+}
+
+#one .content-right {
+    background-color: gray;
+    height: 120px;
     
 }
 
 
 #one h1 {
-    font-size: 48px;
+    font-size: 30px;
     color: #F9FAF9;
     font-weight: 900;
 }
 
-#one p {
-    font-size: 18px;
+#one .content-left > p {
+    font-size: 14px;
     color: #E5E7EB;
     font-weight: 300;
-    max-height: 90%;
+    margin-bottom: 10px;
+
 }
+
+#one .content-right > p {
+    font-size: 10px;
+    color: #E5E7EB;
+    font-weight: 300;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#one .btn {
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25rem;
+    color: white;
+    background-color: #3882f6;
+    font-weight: 500;
+    border-radius: 10%;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+
+  }
 
 
 #two { background-color: white;
