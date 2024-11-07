@@ -66,6 +66,7 @@ footer {
     color: white;
     max-height: 22vh;
     flex: 1;
+    width: 100%;
     
 }
 
@@ -154,9 +155,7 @@ footer {
 .img-container > .square {
     width: 110px;
     height: 110px;
-    border-color: #3882f6;
-    border-width: 3px;
-    border-style: solid;
+    border: 3px solid #3882f6;
     border-radius: 10%;
 }
 
@@ -186,6 +185,65 @@ footer {
 #three p {
     color: #1F2937;
 }
-#four { background-color: white; 
+
+#four { 
+    background-color: white; 
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+#four .container {
+    background-color: #3882f6;
+    display: flex;
+    height: 9vh;
+    margin: 0 100px;
+    border-radius: 0.2em;
+    color: white;
+    flex-direction: row;
+    padding: 10px 70px;
+}
+
+#four .content-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#four .content-left > h1 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#four .content-left > p {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+
+#four .content-right { 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#four .btn {
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25rem;
+    color: white;
+    background-color: #3882f6;
+    font-weight: 500;
+    border-radius: 10%;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid white;
+
+  }
