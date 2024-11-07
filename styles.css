@@ -21,8 +21,6 @@ header, footer {
     padding: 0 10%;
 }
 
-
-
 header p, li, a {
     text-decoration: none;
     font-size: 18px;
@@ -57,11 +55,9 @@ footer {
 .container {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Stacks sections vertically */
+    flex-direction: column; 
 }
 
-
-/* Content sections styling */
 .content {
     display: flex;
     align-items: center;
@@ -73,15 +69,12 @@ footer {
     
 }
 
-
 .content > * {
     overflow: scroll;
 }
 
-
 #one { 
     display: flex;
-    flex: 1;
     background-color: #1F2937; 
     padding: 0 10vw;
     gap: 3vw;
@@ -91,15 +84,12 @@ footer {
     flex: 1;
     display: 1;
     flex-direction: column;
-
 }
 
 #one .content-right {
     background-color: gray;
     height: 120px;
-    
 }
-
 
 #one h1 {
     font-size: 30px;
@@ -112,7 +102,6 @@ footer {
     color: #E5E7EB;
     font-weight: 300;
     margin-bottom: 10px;
-
 }
 
 #one .content-right > p {
@@ -139,14 +128,64 @@ footer {
   }
 
 
-#two { background-color: white;
-    flex: 1;
+#two { 
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 3vh;
+
 }
 
-#three { background-color: #E5E7EB; 
-    flex: 1;
+#two h1 {
+    color: #1F2937;
+    font-size: 22px;
 }
 
+#two .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    width: 90%; 
+    margin-top: 30px;
+}
+
+.img-container > .square {
+    width: 110px;
+    height: 110px;
+    border-color: #3882f6;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+#three { 
+    background-color: #E5E7EB; 
+    display: flex;
+    flex-direction: column;
+}
+
+#three .content-body {
+    display: flex;
+    width: 70%;
+    justify-content: flex-start;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+}
+
+#three .content-signature {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#three p {
+    color: #1F2937;
+}
 #four { background-color: white; 
     flex: 1;
 }
